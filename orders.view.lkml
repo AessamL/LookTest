@@ -36,7 +36,7 @@ view: orders {
     sql: ${TABLE}.Delivery_Date ;;
   }
 
-  dimension: delivery_time {
+  dimension: delivery_time_num {
     type: number
     sql: ${TABLE}.Delivery_Time ;;
   }
@@ -163,5 +163,9 @@ view: orders {
   measure: count {
     type: count
     drill_fields: [order_id, customer_name]
+  }
+  measure: SumGrossProfit {
+    type: sum
+    sql: ${gross_profit} ;;
   }
 }

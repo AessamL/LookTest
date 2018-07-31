@@ -15,7 +15,7 @@ view: essentials {
     }
     measure: SalesTotalSum {
       description: "The sum of All Sales"
-      type: count
+      type: count_distinct
       sql: (COUNT ${salesTotal}) ;;
     }
   #

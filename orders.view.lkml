@@ -168,4 +168,8 @@ view: orders {
     type: sum
     sql: ${gross_profit} ;;
   }
+  measure:StatebyRegion  {
+    type: count_distinct
+    sql: ${state} ;;
+  }
 }

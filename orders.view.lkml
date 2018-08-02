@@ -21,6 +21,10 @@ view: orders {
     type: number
     sql: ${TABLE}.Deilverd_Days ;;
   }
+  dimension: NameLength {
+    type: number
+    sql:LEN(${customer_name}) ;;
+  }
 
   dimension_group: delivery {
     type: time
@@ -33,6 +37,7 @@ view: orders {
       quarter,
       year
     ]
+    convert_tz: no
     sql: ${TABLE}.Delivery_Date ;;
   }
 

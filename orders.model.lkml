@@ -11,4 +11,3 @@ datagroup: orders_default_datagroup {
 persist_with: orders_default_datagroup
 
 explore: orders {}
-explore: essentials {}

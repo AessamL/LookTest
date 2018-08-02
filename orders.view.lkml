@@ -27,7 +27,7 @@ view: orders {
   }
   dimension: UpperName {
     type: string
-    sql: UPPER(${customer_name} ;;
+    sql: UPPER(${customer_name}) ;;
   }
   dimension_group: delivery {
     type: time

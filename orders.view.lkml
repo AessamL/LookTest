@@ -52,6 +52,10 @@ view: orders {
     type: number
     sql: ${TABLE}.Delivery_Time ;;
   }
+  dimension: Region_East {
+    type: string
+    sql: (SELECT Region FROM Orders.orders WHERE  Region = 'EAST') ;;
+  }
 
   dimension: discount {
     type: number

@@ -23,7 +23,7 @@ view: orders {
   }
   measure: NameLength {
     type: number
-    sql:LEN(${customer_name}) ;;
+    sql:BYTE_LENGTH(${customer_name}) ;;
   }
 
   dimension_group: delivery {

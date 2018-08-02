@@ -44,7 +44,7 @@ view: orders {
     sql: ${TABLE}.Delivery_Date ;;
   }
   dimension:delievey_Time  {
-    type: date_time
+    type: string
     sql: ${delivery_date} ;;
 
   }

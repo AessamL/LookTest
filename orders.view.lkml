@@ -29,6 +29,12 @@ view: orders {
     type: string
     sql: UPPER(${customer_name}) ;;
   }
+
+  dimension: EastOnly {
+    type: yesno
+    sql: ${region} = 'EAST' ;;
+  }
+
   dimension_group: delivery {
     type: time
     timeframes: [

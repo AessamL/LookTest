@@ -15,6 +15,7 @@ view: orders {
   dimension: customer_name {
     type: string
     sql: ${TABLE}.Customer_Name ;;
+    drill_fields: [details*]
   }
 
   dimension: deilverd_days {

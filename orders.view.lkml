@@ -171,6 +171,7 @@ dimension: DeliveryIntervals {
   dimension: state {
     type: string
     sql: ${TABLE}.State ;;
+    map_layer_name: us_states
   }
 
   dimension: target_average_delivery {

@@ -54,7 +54,7 @@ view: orders {
   }
   dimension: Region_East {
     type: string
-    sql: (SELECT ${region} WHERE ${region} = 'EAST') ;;
+    sql: (SELECT ${region} FROM ${TABLE} WHERE ${region} = 'EAST') ;;
   }
 
   dimension: discount {

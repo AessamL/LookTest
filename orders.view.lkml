@@ -1,5 +1,4 @@
 view: orders {
-  label: "NotOrders"
   sql_table_name: Orders.orders ;;
 
   dimension: order_id {
@@ -211,5 +210,8 @@ dimension: DeliveryIntervals {
     field: region
     value: "EAST"
   }
+  }
+  set: details {
+    fields: [UpperName,Location , carriour ]
   }
 }

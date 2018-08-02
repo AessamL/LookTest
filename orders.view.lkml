@@ -21,7 +21,7 @@ view: orders {
     type: number
     sql: ${TABLE}.Deilverd_Days ;;
   }
-  dimension: NameLength {
+  measure: NameLength {
     type: number
     sql:LEN(${customer_name}) ;;
   }

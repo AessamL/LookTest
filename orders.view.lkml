@@ -25,7 +25,10 @@ view: orders {
     type: number
     sql:BYTE_LENGTH(${customer_name}) ;;
   }
-
+  dimension: UpperName {
+    type: string
+    sql: UPPER(${customer_name} ;;
+  }
   dimension_group: delivery {
     type: time
     timeframes: [

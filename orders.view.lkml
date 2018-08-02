@@ -43,7 +43,11 @@ view: orders {
     convert_tz: no
     sql: ${TABLE}.Delivery_Date ;;
   }
+  dimension:delievey_Time  {
+    type: date_time
+    sql: ${delivery_date} ;;
 
+  }
   dimension: delivery_time_num {
     type: number
     sql: ${TABLE}.Delivery_Time ;;

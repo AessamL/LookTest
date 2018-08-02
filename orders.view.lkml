@@ -29,7 +29,12 @@ view: orders {
     type: string
     sql: UPPER(${customer_name}) ;;
   }
-
+dimension: DeliveryIntervals {
+  type: tier
+  sql: ${deilverd_days} ;;
+  tiers: [10 ,20,30,60,90,120 ,150]
+  style: integer
+}
   dimension: EastOnly {
     type: yesno
     sql: ${region} = 'EAST' ;;

@@ -18,6 +18,7 @@ view: orders {
   }
 
   dimension: deilverd_days {
+    label: "DeliveredDays"
     type: number
     sql: ${TABLE}.Deilverd_Days ;;
   }

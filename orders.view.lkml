@@ -167,6 +167,11 @@ dimension: DeliveryIntervals {
     type: string
     sql: ${TABLE}.Ship_Method ;;
   }
+  dimension: Location {
+    type: location
+    sql_latitude: ${latitude} ;;
+    sql_longitude: ${longitude}  ;;
+  }
 
   dimension: state {
     type: string

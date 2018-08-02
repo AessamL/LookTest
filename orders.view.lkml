@@ -1,4 +1,5 @@
 view: orders {
+  label: "NotOrders"
   sql_table_name: Orders.orders ;;
 
   dimension: order_id {

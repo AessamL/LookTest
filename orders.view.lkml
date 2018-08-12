@@ -31,6 +31,11 @@ view: orders {
     type: string
     sql: UPPER(${customer_name}) ;;
   }
+
+  dimension: SMImap {
+    sql: ${TABLE}.region ;;
+    map_layer_name:SMI_Solar_Stations
+  }
 dimension: DeliveryIntervals {
   type: tier
   sql: ${deilverd_days} ;;

@@ -1,4 +1,4 @@
-view: orders {
+view: PegasusOrders {
   sql_table_name: Orders.orders ;;
 
   dimension: order_id {

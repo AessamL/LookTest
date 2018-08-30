@@ -11,6 +11,7 @@ datagroup: orders_default_datagroup {
 persist_with: orders_default_datagroup
 
 explore: PegasusOrders {}
+explore: location {}
 
 map_layer: SMI_Solar_Stations {
   file: "map.topojson"

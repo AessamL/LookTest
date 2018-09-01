@@ -1,6 +1,6 @@
 # If necessary, uncomment the line below to include explore_source.
 
-# include: "PegasusOrders.model.lkml"
+ include: "PegasusOrders.model.lkml"
 
 view: DerivedView{
   derived_table: {

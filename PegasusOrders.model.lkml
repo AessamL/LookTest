@@ -13,6 +13,7 @@ label: "Pegasus Orders"
 persist_with: orders_default_datagroup
 
 explore: PegasusOrders {
+  description: "This is The Main Model Based on The famous Order Sheet"
   label: "Pegasus Orders"
 }
 explore: location {}

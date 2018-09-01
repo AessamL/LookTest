@@ -11,6 +11,7 @@ view: location {
     sql: ${TABLE}.longitude ;;
   }
   dimension: region {
+    label: "Regionz"
     type: string
     sql: ${TABLE}.Region ;;
   }

@@ -10,7 +10,9 @@ datagroup: orders_default_datagroup {
 
 persist_with: orders_default_datagroup
 
-explore: PegasusOrders {}
+explore: PegasusOrders {
+  label: "Pegasus Orders"
+}
 explore: location {}
 
 map_layer: SMI_Solar_Stations {

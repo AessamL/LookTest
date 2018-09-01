@@ -1,4 +1,5 @@
 view: location {
+  label: "Location Copy"
   sql_table_name: Orders.orders ;;
 
   dimension: latitude {

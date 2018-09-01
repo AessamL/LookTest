@@ -24,4 +24,7 @@ view: location {
     sql: ${TABLE}.State ;;
     map_layer_name: us_states
   }
+  measure: count {
+    type: count
+  }
   }

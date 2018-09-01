@@ -8,6 +8,8 @@ datagroup: orders_default_datagroup {
   max_cache_age: "1 hour"
 }
 
+label: "Pegasus Orders"
+
 persist_with: orders_default_datagroup
 
 explore: PegasusOrders {

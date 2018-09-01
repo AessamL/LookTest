@@ -17,7 +17,7 @@ explore: PegasusOrders {
   label: "Pegasus Orders"
 }
 explore: location {
-  group_label: "Custome Test"
+  #group_label: "Custome Test"
   view_label: "Where are You !?"
 }
 

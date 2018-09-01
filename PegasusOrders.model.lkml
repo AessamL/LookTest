@@ -16,7 +16,9 @@ explore: PegasusOrders {
   description: "This is The Main Model Based on The famous Order Sheet"
   label: "Pegasus Orders"
 }
-explore: location {}
+explore: location {
+  view_label: "Where are You !?"
+}
 
 map_layer: SMI_Solar_Stations {
   file: "map.topojson"

@@ -2,7 +2,7 @@ view: derivedtabletest1 {
   derived_table: {
     sql: SELECT COUNT(Order_ID) AS OrderId , Region , SUM(Sales_Total) AS TotalSales , State  FROM `bigquery-looker-203611.Orders.orders` GROUP BY Region , State  LIMIT 100
       ;;
-      indexes: ["order_id"]
+      #indexes: ["order_id"]
       sql_trigger_value: SELECT CURRENT_TIME() ;;
 
   }

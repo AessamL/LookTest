@@ -5,12 +5,12 @@ include: "*.view"
 
 datagroup: orders_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
-  max_cache_age: "1 hour"
+  max_cache_age: "5 minutes"
 }
 
 label: "Pegasus Orders"
 
-persist_with: orders_default_datagroup
+#persist_with: orders_default_datagroup
 
 explore: PegasusOrders {
   description: "This is The Main Model Based on The famous Order Sheet"
@@ -23,6 +23,7 @@ explore: location {
 explore: derivedtabletest1 {
   description: "Just a derived Table Test"
   label: "SalesTotal"
+  persist_with: orders_default_datagroup
 }
 
 map_layer: SMI_Solar_Stations {

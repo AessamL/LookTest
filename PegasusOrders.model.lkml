@@ -3,10 +3,10 @@ connection: "bigqueryorders"
 # include all the views
 include: "*.view"
 
-datagroup: orders_default_datagroup {
+#datagroup: orders_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
-  max_cache_age: "5 minutes"
-}
+ # max_cache_age: "5 minutes"
+#}
 
 label: "Pegasus Orders"
 
@@ -23,7 +23,7 @@ explore: location {
 explore: derivedtabletest1 {
   description: "Just a derived Table Test"
   label: "SalesTotal"
-  persist_with: orders_default_datagroup
+  #persist_with: orders_default_datagroup
 }
 
 map_layer: SMI_Solar_Stations {

@@ -4,7 +4,9 @@ view: derivedtabletest1 {
       ;;
       #indexes: ["Order_ID"]
       #sql_trigger_value: SELECT CURRENT_TIME() ;;
-      persist_for: "20 minutes"
+      persist_for: "2 hours"
+     # indexes: ["order_id"] not needed in bigQuery !
+
   }
 
   measure: count {
@@ -13,6 +15,7 @@ view: derivedtabletest1 {
   }
 
   dimension: order_id {
+    primary_key: yes
     type: number
     sql: ${TABLE}.OrderId ;;
   }

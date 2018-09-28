@@ -28,6 +28,7 @@ view: derivedtabletest1 {
   dimension: total_sales {
     type: number
     sql: ${TABLE}.TotalSales ;;
+    value_format: "0.00"
   }
 
   dimension: state {

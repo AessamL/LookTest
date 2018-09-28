@@ -196,6 +196,10 @@ dimension: DeliveryIntervals {
     type: number
     sql: ${TABLE}.Target_Max_delivery ;;
   }
+  measure: TotalDeliveryDays {
+    type: sum
+    sql: ${deilverd_days} ;;
+  }
 
   measure: count {
     type: count

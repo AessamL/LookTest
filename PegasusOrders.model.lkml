@@ -16,6 +16,10 @@ explore: PegasusOrders {
   description: "This is The Main Model Based on The famous Order Sheet"
   label: "Pegasus Orders"
 }
+explore: fromgooglesheettrick {
+  description: "a quicktest to add data from google Sheet"
+  label: "GoogleSheetData"
+}
 explore: location {
   #group_label: "Custome Test"
   view_label: "Where are You !?"

@@ -7,6 +7,7 @@ view: fromgooglesheettrick {
       union select '5', 'hyundai'
       union select '6', 'mercedes'
        ;;
+    persist_for: "2 hours"
   }
 
   measure: count {

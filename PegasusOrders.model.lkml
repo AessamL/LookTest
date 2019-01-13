@@ -15,6 +15,10 @@ label: "Pegasus Orders"
 explore: PegasusOrders {
   description: "This is The Main Model Based on The famous Order Sheet"
   label: "Pegasus Orders"
+  join: dimensiontest {
+    sql_on: ${dimensiontest.pegasusorders_order_id_1} = ${PegasusOrders.order_id} ;;
+    relationship: one_to_one
+  }
 }
 explore: testview {
   description: "a quicktest to add data from google Sheet"

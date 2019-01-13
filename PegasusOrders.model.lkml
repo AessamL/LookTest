@@ -28,12 +28,7 @@ explore: location {
   #group_label: "Custome Test"
   view_label: "Where are You !?"
 }
-explore: derivedtabletest1 {
-  description: "Just a derived Table Test"
-  label: "SalesTotal"
-  #persist_with: orders_default_datagroup
-  persist_for: "2 hours"
-}
+
 
 map_layer: SMI_Solar_Stations {
   file: "map.topojson"

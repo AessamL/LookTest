@@ -20,12 +20,12 @@ view: dimensiontest {
     sql: ${TABLE}.pegasusorders_order_id_1 ;;
   }
 
-  dimension: pegasusorders_sumgrossprofit_1 {
+  dimension: Dimensionalized{
     type: number
     sql: ${TABLE}.pegasusorders_sumgrossprofit_1 ;;
   }
 
   set: detail {
-    fields: [pegasusorders_order_id_1, pegasusorders_sumgrossprofit_1]
+    fields: [pegasusorders_order_id_1, Dimensionalized]
   }
 }

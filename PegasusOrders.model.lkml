@@ -16,6 +16,7 @@ explore: PegasusOrders {
   description: "This is The Main Model Based on The famous Order Sheet"
   label: "Pegasus Orders"
   join: dimensiontest {
+    #foreign_key: PegasusOrders.order_id
     sql_on: ${dimensiontest.pegasusorders_order_id_1} = ${PegasusOrders.order_id} ;;
     relationship: one_to_one
   }

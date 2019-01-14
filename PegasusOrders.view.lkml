@@ -17,7 +17,9 @@ view: PegasusOrders {
     sql: ${TABLE}.Customer_Name ;;
     drill_fields: [details*]
   }
-
+  dimension: test2 {
+    sql: ${dimensiontest.Dimensionalized} ;;
+  }
   dimension: deilverd_days {
     label: "DeliveredDays"
     type: number

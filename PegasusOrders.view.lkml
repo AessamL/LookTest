@@ -202,7 +202,9 @@ dimension: DeliveryIntervals {
     type: sum
     sql: ${deilverd_days} ;;
   }
-
+dimension: Test2 {
+  sql: ${dimensiontest.Dimensionalized} ;;
+}
   measure: count {
     type: count
     drill_fields: [order_id, customer_name]

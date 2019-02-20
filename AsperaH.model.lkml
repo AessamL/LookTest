@@ -29,6 +29,7 @@ explore: location {
   #group_label: "Custome Test"
   view_label: "Where are You !?"
 }
+explore: ziga {}
 
 
 map_layer: SMI_Solar_Stations {

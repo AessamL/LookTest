@@ -209,6 +209,7 @@ dimension: Test2 {
     type: count
     drill_fields: [order_id, customer_name]
   }
+
   measure: SumGrossProfit {
     type: sum
     sql: ${gross_profit} ;;

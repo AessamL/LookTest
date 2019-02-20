@@ -165,7 +165,7 @@ dimension: DeliveryIntervals {
   dimension: sales_total {
     type: number
     sql: ${TABLE}.Sales_Total ;;
-    value_format_name: usd
+    #value_format_name: usd
   }
 
   dimension: ship_container {

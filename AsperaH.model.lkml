@@ -30,6 +30,9 @@ explore: location {
   view_label: "Where are You !?"
 }
 explore: ziga {}
+explore: ziga_e {
+  description: "added ob type"
+}
 
 
 map_layer: SMI_Solar_Stations {
